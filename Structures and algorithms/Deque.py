@@ -77,7 +77,7 @@ class Deque:
 
 if __name__ == '__main__':
 
-    deq = Dequeue()
+    deq = Deque()
     while True:
         command = input().split()
         if command[0] == "exit":
