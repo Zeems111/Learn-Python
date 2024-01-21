@@ -10,7 +10,6 @@ of all numbers inside the sliding window.
 
 def sliding_window_min(a, k):
     q = []
-    shadow_q = []
     for i in range(len(a)):
         if q:
             if q[0] < i - k + 1:
@@ -22,8 +21,7 @@ def sliding_window_min(a, k):
             print("min:", a[q[0]], "\twindow:", a[i-k+1:i+1])
 
 if __name__ == '__main__':
-    _, k = input().split()
-    k = int(k)
+    k = int(input())
 
     arr = list(map(int, input().split()))
     sliding_window_min(arr, k)
